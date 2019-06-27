@@ -64,6 +64,8 @@ services:
   mongo:
     image: mongo
     container_name: docker-mongo
+    ports:
+      - "27017:27017"
     volumes:
       - ./conf/mongod.conf:/etc/mongod.conf.orig:ro
       - ./mongodb/:/var/lib/mongodb/:rw
