@@ -35,7 +35,7 @@ services:
       - mongo:link-mongo
     networks:
       docker_net:
-        ipv4_address: ${PHP72_IP}      
+        ipv4_address: ${PHP72_IP}
 
   mysql:
     image: mysql:5.7
